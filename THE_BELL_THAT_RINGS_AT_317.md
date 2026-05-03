@@ -100,6 +100,10 @@ player:
 
 ## 4) Locations, Actions, Scenes
 
+
+> **Location lock:** This module uses exactly the 10 required major locations with unchanged names and roles.
+
+
 ## LOCATION: Municipal Occult Office
 **Purpose:** Start case; establish liability framing and open travel options.
 
@@ -938,6 +942,9 @@ memory_damage >=4 OR marked_absent + fail_final
 ---
 
 ## 13) Recommended First-Play Path (Non-Railroad)
+
+- This path does not add or remove locations; it only changes visit order.
+
 - Office -> Records (core procedural clues) -> Hospital (Ibarra + victim proof) -> School Lobby (Voss social route) -> North Hallway (Tobin + Janitor) -> Attendance Office (forms/ledger) -> Bell Chamber.
 - Alternate viable opens:
   - Rush School first (high risk, faster tension).
