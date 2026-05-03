@@ -1,0 +1,31 @@
+:root {
+  --bg: #06090c;
+  --panel: #0f141a;
+  --text: #d9e3ea;
+  --cyan: #32d8ff;
+  --yellow: #ffde6a;
+  --green: #74f08f;
+  --red: #ff5a5a;
+  --gray: #7f8890;
+}
+body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.layout { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr auto; gap: 12px; padding: 12px; min-height: 100vh; }
+.panel { border: 1px solid #22313d; background: var(--panel); padding: 10px; box-shadow: 0 0 18px rgba(50,216,255,.06); }
+.scene-panel { grid-row: 1 / span 2; }
+.log-panel { grid-column: 2; max-height: 34vh; overflow:auto; }
+.scene-text { line-height: 1.8; white-space: pre-wrap; }
+.link-btn { margin: 0 4px 4px 0; border: 1px solid currentColor; background: transparent; color: inherit; padding: 2px 6px; cursor: pointer; }
+.investigation { color: var(--cyan); }
+.npc { color: var(--yellow); }
+.exit { color: var(--green); }
+.action { color: #98f5ff; }
+.danger { color: var(--red); }
+.locked { color: var(--gray); opacity: .7; cursor: not-allowed; }
+.visited { color: #95a0a8; opacity: .6; }
+.action-bar { margin-top: 10px; padding-top: 6px; border-top: 1px dashed #304757; }
+.command-form { display:flex; gap:8px; margin-top: 8px; }
+.command-form input { flex:1; background:#070c10; color:var(--text); border:1px solid #29414f; padding:6px; }
+.glitch { text-shadow: 1px 0 #f00, -1px 0 #0ff; }
+.flicker { animation: flicker .15s infinite alternate; }
+@keyframes flicker { from { opacity: .9; } to { opacity: 1; } }
+.scramble .scene-text { letter-spacing: .03em; }
