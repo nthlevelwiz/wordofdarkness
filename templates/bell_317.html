@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word of Darkness — Bell 3:17 Module</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main id="app" class="layout">
+    <section class="panel scene-panel">
+      <h2>Bell 3:17 Scene</h2>
+      <div id="sceneText" class="scene-text"></div>
+      <div id="actionBar" class="action-bar"></div>
+      <form id="commandForm" class="command-form">
+        <input id="commandInput" placeholder="command fallback: investigate case folder" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <aside class="panel sidebar">
+      <h2>Investigator</h2>
+      <div id="playerPanel"></div>
+      <h3>Allies</h3><ul id="alliesList"></ul>
+      <h3>Inventory</h3><ul id="inventoryList"></ul>
+      <h3>Clues</h3><ul id="cluesList"></ul>
+    </aside>
+
+    <section class="panel log-panel">
+      <h2>Case Log</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="/static/bell-317-app.js"></script>
+</body>
+</html>
